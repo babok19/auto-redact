@@ -45,7 +45,6 @@ body{
 .nav-menu ul>li>a:hover{
 	text-decoration: none;
 	color: #000;
-	font-size: 20px;
 	background-color: #fff;
 	border-radius: 5px;
 	padding: 5px;
@@ -294,6 +293,7 @@ label:hover > .submenu{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     margin: 8px;
     left: 250px;
+
 }
 .us{
 	margin: 10px;
@@ -347,10 +347,13 @@ footer nav a:hover{
 }
 @media screen and (max-width: 480px){
 	.nav-menu ul>li>a{
+		font-size: 10px;
+	}
+	.number{
 		font-size: 15px;
 	}
 	.category label{
-	font-size: 15px;
+	font-size: 10px;
 	text-transform: uppercase;
 	padding: 5px;
 	margin: 3px;
@@ -379,17 +382,38 @@ footer nav a:hover{
 	padding: 5px;
 	margin: 0;
 }
-	.cars .card-none{
-		display: none;
+.cars .card-none{
+	display: none;
 }
 .ifcom{
 	overflow: scroll;
+}
+.us{
+	display: none;
 }
 .cars .card{
 	margin: 0 auto;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	margin-right: 3px;
+	margin-left: 3px;
 }
+.feedback{
+	width: 50%;
 }
-@media screen and(min-width: 800px){
+.mail{
+	width: 80%;
+}
+.tag{
+	font-size: 7px;
+}
+.peop{
+	width: 80%;
+}
+.textarea{
+	width: 80%;
+}
+.submit:not(:hover){
+	width: 80%;
+}
 }
