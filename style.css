@@ -2,6 +2,9 @@
 	padding: 0;
 	margin: 0 auto;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
 	font-family: 'Bellota Text', cursive, sans-serif;
 }
@@ -104,7 +107,7 @@ label:hover > .submenu{
 	flex-wrap: wrap;
 	background:#000 ;
 	align-content: flex-start;
-	width: 100%;
+	width: auto;
 	height: auto;
     border: 1px;
     border-radius: 5px;
@@ -123,13 +126,13 @@ label:hover > .submenu{
 	transition: 0.3s;
 }
 .cars .card{
-	width:310px;
+	width:300px;
 	height: 350px;
 	background: #8B0000;
 	color: #fff;
 	border-radius: 10px;
-	overflow: auto;
-	margin: 5px;
+	margin-top: 7px;
+	margin-bottom: 10px;
 }
 .cars .card-none{
 	width:310px;
@@ -254,8 +257,8 @@ label:hover > .submenu{
 	font-size: 15px;
 	color: #000;
 }
-.submit:not(:hover){
-	width: 175px;
+.submit{
+	width: 80%;
 	height: 30px;
 	margin: 10px;
 	font-size: 18px;
@@ -263,18 +266,6 @@ label:hover > .submenu{
 	border-radius: 5px;
 	background-color: #fff;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
-	transition: 0.7s;
-}
-.submit:hover{
-	width: 175px;
-	height: 30px;
-	margin: 10px;
-	color: #fff;
-	font-size: 18px;
-	border: 1px;
-	border-radius: 5px;
-	background-color: #8b0000;
-	box-shadow:  0 0 15px rgba(0,0,0,0.5);
 	transition: 0.7s;
 }
 .company{
@@ -345,18 +336,39 @@ footer nav a:hover{
 	width: 40px;
 	height: 40px;
 }
+.arrowUp {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(130deg, #2d2722 50%, #398a99 50%);
+  -webkit-background-size: 300%;
+  background-size: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.arrowUp:hover {
+  background-position: 100% 0;
+}
 @media screen and (max-width: 480px){
-	.nav-menu ul>li>a{
-		font-size: 10px;
-	}
-	.number{
-		font-size: 15px;
-	}
-	.category label{
+.nav-menu ul>li>a{
 	font-size: 10px;
+}
+.number{
+	font-size: 15px;
+}
+.category label{
+    font-size: 10px;
 	text-transform: uppercase;
 	padding: 5px;
-	margin: 3px;
 }
 .category label:hover{
 	background-color: #000;
@@ -372,7 +384,7 @@ footer nav a:hover{
 	left: 0;
 	background: black;
 	list-style: none;
-	width: auto;
+	width: 70px;
 	z-index: 1;
 	display: none;
 	color: #fff;
@@ -391,13 +403,6 @@ footer nav a:hover{
 .us{
 	display: none;
 }
-.cars .card{
-	margin: 0 auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-right: 3px;
-	margin-left: 3px;
-}
 .feedback{
 	width: 50%;
 }
@@ -413,7 +418,28 @@ footer nav a:hover{
 .textarea{
 	width: 80%;
 }
-.submit:not(:hover){
+.submit{
 	width: 80%;
+	margin-left: 10px;
+	padding: 5px;
+	text-align: center;
+}
+.arrowUp{
+	position: fixed;
+	bottom: 5%;
+	right: 3%;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	background: linear-gradient(130deg, #2d2722 50%, #398a99 50%);
+	-webkit-background-size: 300%;
+	background-size: 300%;
+	display: block;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 5px;
+	transition: .5s;
 }
 }
