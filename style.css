@@ -8,6 +8,9 @@ html {
 body{
 	font-family: 'Bellota Text', cursive, sans-serif;
 }
+body a{
+	text-decoration: none;
+}
 .header{
 	display: flex;
 	align-items: center;
@@ -107,6 +110,7 @@ label:hover > .submenu{
 	flex-wrap: wrap;
 	background:#000 ;
 	align-content: flex-start;
+	max-width: 1296px;
 	width: auto;
 	height: auto;
     border: 1px;
