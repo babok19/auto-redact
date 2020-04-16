@@ -405,7 +405,7 @@ footer nav a:hover{
 	left: 0;
 	background: black;
 	list-style: none;
-	width: 70px;
+	width: auto;
 	z-index: 1;
 	display: none;
 	color: #fff;
