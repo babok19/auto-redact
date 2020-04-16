@@ -130,7 +130,7 @@ label:hover > .submenu{
 	transition: 0.3s;
 }
 .cars .card{
-	width:300px;
+	width:32%;
 	height: 350px;
 	background: #8B0000;
 	color: #fff;
@@ -139,7 +139,7 @@ label:hover > .submenu{
 	margin-bottom: 10px;
 }
 .cars .card-none{
-	width:310px;
+	width:32%;
 	height: 350px;
 	color: #fff;
 	border-radius: 10px;
@@ -157,6 +157,7 @@ label:hover > .submenu{
 	width: 100%;
 	object-fit: cover;
 	height: 230px;
+	border-radius: 5px;
 }
 .cars .card .info{
 	margin: 0 ;
@@ -347,7 +348,7 @@ footer nav a:hover{
   color: #fff;
   width: 70px;
   height: 70px;
-  background: linear-gradient(130deg, #2d2722 50%, #398a99 50%);
+  background: linear-gradient(130deg, #2d2722 50%, #8b0000 50%);
   -webkit-background-size: 300%;
   background-size: 300%;
   display: flex;
@@ -357,20 +358,36 @@ footer nav a:hover{
   font-size: 50px;
   border-radius: 5px;
   transition: .5s;
+  opacity: 50%;
 }
 
 .arrowUp:hover {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  background: linear-gradient(130deg, #2d2722 50%, #8b0000 50%);
+  -webkit-background-size: 300%;
+  background-size: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 5px;
+  transition: .5s;
+  opacity: 100%;
   background-position: 100% 0;
 }
 @media screen and (max-width: 480px){
 .nav-menu ul>li>a{
-	font-size: 10px;
+	font-size: 15px;
 }
 .number{
 	font-size: 15px;
 }
 .category label{
-    font-size: 10px;
+    font-size: 15px;
 	text-transform: uppercase;
 	padding: 5px;
 }
@@ -397,6 +414,15 @@ footer nav a:hover{
 	display: flex;
 	padding: 5px;
 	margin: 0;
+}
+	.cars .card{
+	width:95%;
+	height: 350px;
+	background: #8B0000;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 7px;
+	margin-bottom: 10px;
 }
 .cars .card-none{
 	display: none;
@@ -425,8 +451,9 @@ footer nav a:hover{
 .submit{
 	width: 80%;
 	margin-left: 10px;
-	padding: 5px;
+	padding: 0;
 	text-align: center;
+	font-size: 100%;
 }
 .arrowUp{
 	position: fixed;
@@ -435,7 +462,7 @@ footer nav a:hover{
 	color: #fff;
 	width: 40px;
 	height: 40px;
-	background: linear-gradient(130deg, #2d2722 50%, #398a99 50%);
+	background: linear-gradient(130deg, #2d2722 50%, #8b0000 50%);
 	-webkit-background-size: 300%;
 	background-size: 300%;
 	display: block;
@@ -445,6 +472,106 @@ footer nav a:hover{
 	text-decoration: none;
 	font-size: 30px;
 	transition: .5s;
+	opacity: 50%;
+	text-align: center;
+}
+.arrowUp:hover{
+	position: fixed;
+	bottom: 5%;
+	right: 3%;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	background: linear-gradient(130deg, #2d2722 50%, #8b0000 50%);
+	-webkit-background-size: 300%;
+	background-size: 300%;
+	display: block;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 30px;
+	transition: .5s;
+	text-align: center;
+	opacity: 100%;
+	background-position: 100% 0;
+}
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+	.category label{
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 15px;
+	color: #fff;
+}
+.category label:hover{
+	background-color: #000;
+	color: white;
+	transition: 0.4s;
+}
+.submenu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #000;
+	list-style: none;
+	width: auto;
+	z-index: 2;
+	display: none;
+	color: #fff;
+}
+.submenu li{
+	display: flex;
+	padding: 15px;
+	margin: 0;
+}
+	.cars .card{
+	width:45%;
+	height: 350px;
+	background: #8B0000;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 7px;
+	margin-bottom: 10px;
+}
+	.arrowUp{
+	position: fixed;
+	bottom: 5%;
+	right: 3%;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(130deg, #2d2722 50%, #8b0000 50%);
+	-webkit-background-size: 300%;
+	background-size: 300%;
+	display: block;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 35px;
+	transition: .5s;
+	opacity: 50%;
+	text-align: center;
+}
+	.arrowUp:hover{
+	position: fixed;
+	bottom: 5%;
+	right: 3%;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(130deg, #2d2722 50%, #8b0000 50%);
+	-webkit-background-size: 300%;
+	background-size: 300%;
+	display: block;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 35px;
+	transition: .5s;
+	opacity: 100%;
 	text-align: center;
 }
 }
