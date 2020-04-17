@@ -11,7 +11,7 @@ body{
 body a{
 	text-decoration: none;
 }
-.header{
+header{
 	display: flex;
 	align-items: center;
 	vertical-align: middle;
@@ -110,13 +110,17 @@ label:hover > .submenu{
 	flex-wrap: wrap;
 	background:#000 ;
 	align-content: flex-start;
-	max-width: 1296px;
+	max-width: 1256px;
 	width: auto;
 	height: auto;
     border: 1px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     margin: 5px;
+    padding: 5px;
+}
+.category{
+	max-width: 1256px;
 }
 .category label{
 	font-size: 30px;
@@ -212,7 +216,7 @@ label:hover > .submenu{
 	max-width: 230px;
 	max-height: 250px;
 	height: 230px;
-	background-color: #000;
+	background-color: #8b0000;
 	margin: 8px;
 	border: 1px;
 	border-radius: 5px;
@@ -275,6 +279,11 @@ label:hover > .submenu{
 }
 .company{
 	display: flex;
+	background-color: #000;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	max-width: 1256px;
 }
 .ifcom{
 	display: flex;
@@ -282,6 +291,7 @@ label:hover > .submenu{
 	align-items: center;
 	vertical-align: middle;
 	width: 100%;
+	background-color: #fff;
 	max-height: 250px;
 	height: 230px;
 	border: 1px;
@@ -574,4 +584,13 @@ footer nav a:hover{
 	opacity: 100%;
 	text-align: center;
 }
+}
+@media screen and (min-width:800px){
+	.content{
+		display: inline-flex;
+		vertical-align: middle;
+		align-items: center;
+		justify-content: center;
+		
+	}
 }
