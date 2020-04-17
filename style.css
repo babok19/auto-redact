@@ -71,6 +71,7 @@ header{
 	height: 40px;
 	margin: 8px;
 	margin-top: 0;
+	margin-bottom: 0;
 	background-color: #000;
 	border-radius: 0 0 5px 5px;
 	border-radius: ;
@@ -117,18 +118,17 @@ label:hover > .submenu{
 	flex-wrap: wrap;
 	background:#000 ;
 	align-content: flex-start;
-	max-width: 1256px;
+	max-width: 1296px;
 	width: auto;
 	height: auto;
     border: 1px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    margin: 5px;
+
     padding: 5px;
 }
 .category{
-	max-width: 1256px;
-	margin: 8px;
+	max-width: 1296px;
 }
 .category label{
 	font-size: 30px;
@@ -340,6 +340,7 @@ footer{
 	margin: 0 auto;
 	background-color: #000;
 	margin: 8px;
+	margin-top: 0;
 	border-radius: 5px;
 	text-align: center;
 	padding-top: 25px;
@@ -414,7 +415,7 @@ footer nav a:hover{
 	color: white;
 }
 .category{
-	display: flex;
+
 	width: auto;
 }
 .submenu{
@@ -471,6 +472,10 @@ footer nav a:hover{
 }
 .textarea{
 	width: 80%;
+}
+.mail[placeholder]{
+	font-size: 10px;
+	color: #000;
 }
 .submit{
 	width: 80%;
