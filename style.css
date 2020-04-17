@@ -75,6 +75,13 @@ header{
 	border-radius: 0 0 5px 5px;
 	border-radius: ;
 }
+.container{
+	display: grid;
+}
+.block{
+	justify-content: center;
+	align-self: center;
+}
 .category-label{
 	color: #fff;
 	text-transform: uppercase;
@@ -121,6 +128,7 @@ label:hover > .submenu{
 }
 .category{
 	max-width: 1256px;
+	margin: 8px;
 }
 .category label{
 	font-size: 30px;
@@ -249,7 +257,7 @@ label:hover > .submenu{
 	width: 180px;
 	height: 30px;
 	color: #fff;
-	background-color: #8b0000;
+	background-color: #000;
 	border:1px;
 	border-radius: 15px;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
@@ -436,6 +444,12 @@ footer nav a:hover{
 }
 .cars .card-none{
 	display: none;
+}
+.company{
+	background-color: #000;
+	padding: 5px;
+	margin: 8px;
+	border-radius: 5px;
 }
 .ifcom{
 	overflow: scroll;
