@@ -82,6 +82,7 @@ header{
 .block{
 	justify-content: center;
 	align-self: center;
+	margin-top: 0;
 }
 .category-label{
 	color: #fff;
@@ -182,6 +183,7 @@ label:hover > .submenu{
 	width: auto;
 	background-color: #8B0000;
 	margin: 8px;
+	margin-bottom: 0;
 	border-radius: 5px;
 }
 .switch{
@@ -608,13 +610,4 @@ footer nav a:hover{
 	opacity: 100%;
 	text-align: center;
 }
-}
-@media screen and (min-width:800px){
-	.content{
-		display: inline-flex;
-		vertical-align: middle;
-		align-items: center;
-		justify-content: center;
-		
-	}
 }
