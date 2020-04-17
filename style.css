@@ -127,9 +127,6 @@ label:hover > .submenu{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     padding: 5px;
 }
-.category{
-	width: 100%;
-}
 .category label{
 	font-size: 30px;
 	text-transform: uppercase;
@@ -182,7 +179,7 @@ label:hover > .submenu{
 	justify-content: center;
 	width: auto;
 	background-color: #8B0000;
-	margin: 8px;
+	margin: 5px;
 	margin-bottom: 0;
 	border-radius: 5px;
 }
